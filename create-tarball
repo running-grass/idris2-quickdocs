@@ -1,0 +1,8 @@
+#!/usr/bin/fish
+
+set out /tmp/build.tar.xz
+cd (status dirname) || exit 1
+pushd site
+#and pnpm build
+and tar --mtime=0000-00-00 --{owner,group}=root -cvJf $out .
+and echo Generated at $out

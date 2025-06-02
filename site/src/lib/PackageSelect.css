@@ -1,0 +1,11 @@
+.selected {
+  background: yellow;
+}
+.ignored {
+  background: red;
+  color: white;
+}
+.loaded {
+  /* outline: solid 1px blue; */
+  text-decoration: underline;
+}

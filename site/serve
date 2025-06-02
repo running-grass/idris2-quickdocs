@@ -1,0 +1,39 @@
+#!/usr/bin/env raku
+
+use v6;
+
+sub all_files_in ($dir) {
+    gather for $dir.IO.dir {
+        when $_ ~~ :d {
+            samewith($_)>>.take
+        }
+        default {
+            take $_
+        }
+    }
+}
+
+sub build {
+    run <pnpm build>
+}
+
+indir $*PROGRAM.dirname, -> {
+    my $index = "build/index.html".IO;
+    do {
+        when so not $index ~~ :e { build }
+        my $build_mtime = $index.modified;
+        my @newer = all_files_in("src").grep({ $_.modified > $build_mtime });
+        when so @newer {
+            say "Files Changed:";
+            @newer.map: {say "- " ~ $_};
+            build
+        }
+        default {
+            say "No new files"
+        }
+    }
+    
+    indir "build", {
+        run <python -m http.server --bind 127.0.0.1 2334>
+    }
+}

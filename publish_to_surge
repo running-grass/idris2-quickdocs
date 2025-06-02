@@ -1,0 +1,7 @@
+#!/usr/bin/env fish
+cd (status dirname) || exit 1
+pushd site
+#set -x BASE_URL /
+set -x URL idris2-quickdocs.surge.sh
+pnpm build
+and surge build $URL

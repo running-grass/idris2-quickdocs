@@ -1,0 +1,16 @@
+#!/usr/bin/fish
+
+# path to cloned https://github.com/stefan-hoeck/idris2-pack-docs
+set pack_docs ~/computing/docs/idris2-docs/idris2-pack-docs-main
+
+# dir of processed .json files
+set index_dir ~/computing/docs/idris2-docs/processed/
+
+set data_dir (dirname (status -f))/data
+
+rm -fr $data_dir/
+mkdir $data_dir
+rsync -a $pack_docs/docs/ $data_dir/
+rsync -a $index_dir/ $data_dir/
+scripts/gen-packages-json.py $data_dir/
+

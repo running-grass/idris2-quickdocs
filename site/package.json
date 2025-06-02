@@ -1,0 +1,32 @@
+{
+  "name": "site",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "package": "vite package",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-static": "next",
+    "@sveltejs/kit": "next",
+    "@types/lodash": "^4.14.182",
+    "mdsvex": "^0.10.6",
+    "sass": "^1.50.1",
+    "svelte": "^3.49.0",
+    "svelte-check": "^2.2.6",
+    "svelte-preprocess": "^4.10.1",
+    "tslib": "^2.3.1",
+    "typescript": "~4.6.2",
+    "vite": "^3.0.7"
+  },
+  "type": "module",
+  "dependencies": {
+    "fuzzbunny": "https://github.com/locriacyber/fuzzbunny.git#master",
+    "lodash": "^4.17.21",
+    "svelte-local-storage-store": "^0.3.0",
+    "svelte-virtual-list-ce": "https://github.com/locriacyber/svelte-virtual-list.git#custom-scroll-top"
+  }
+}
