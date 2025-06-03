@@ -61,8 +61,8 @@ async function fetchIndex_helper(url: string, package_name: string): Promise<Sea
 }
 
 // @ts-ignore
-import { fuzzyFilter1 } from "fuzzbunny/fuzzbunny.ts"
-import type { FuzzyFilterResult1 } from "fuzzbunny/fuzzybunny-extra"
+import { fuzzyFilter1 } from "fuzzbunny"
+import type { FuzzyFilterResult1 } from "fuzzbunny/build/fuzzybunny-extra"
 
 export function weighted(o: FuzzyFilterResult1<SearchItem>) {
   let fullname = o.scores.fullname || 0

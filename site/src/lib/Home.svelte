@@ -26,7 +26,7 @@ function navigateTo(package_name: string) {
     <nav class="flex">
       {#each Array.from(package_list).sort() as package_name}
         <a
-          href="data/{package_name}/index.html"
+          href="data/{package_name}/docs/index.html"
           on:click|preventDefault="{() => navigateTo(package_name)}">{package_name}</a
         >
       {/each}

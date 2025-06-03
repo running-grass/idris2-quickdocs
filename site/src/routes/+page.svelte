@@ -76,7 +76,7 @@ $: {
 function forceNavigateToPackage(package_name: string) {
   selectedEntry = {
     package: package_name,
-    target: package_name + '/index.html'
+    target: package_name + '/docs/index.html'
   }
   const url = new URL($page.url)
   url.searchParams.set("pkg", package_name)
