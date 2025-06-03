@@ -1,0 +1,80 @@
+.resultList {
+  flex: 1 1 auto;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.resultInfo {
+  font-size: 0.9em;
+  color: #888;
+  margin-bottom: 0.5em;
+}
+
+.item {
+  padding: 6px 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  background: inherit;
+  transition: background 0.1s;
+}
+
+.item:hover {
+  background: #eee;
+}
+
+.item.selected {
+  padding: 6px 8px;
+  border-radius: 4px;
+  background: rgb(101, 159, 219);
+  color: #fff;
+}
+
+.name {
+  font-family: "DejaVu Sans Mono", monospace;
+  color: #000;
+  background: inherit;
+}
+
+.selected .name {
+  color: #fff;
+}
+
+.separator {
+  color: #777;
+  margin: 0 0.3em;
+}
+
+.type {
+  color: #777;
+  font-stretch: condensed;
+  margin-right: 0.5em;
+}
+
+.namespace {
+  color: #999;
+  margin-left: 0.5em;
+}
+
+.package {
+  color: #999;
+  float: right;
+  margin-left: 0.5em;
+  font-size: 85%;
+}
+
+.selected .namespace,
+.selected .package {
+  color: rgb(50, 80, 109);
+} 
+
+.itemContent {
+  margin-bottom: 0.5em;
+}
+
+.itemFooter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}

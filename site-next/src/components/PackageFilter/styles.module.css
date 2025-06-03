@@ -1,0 +1,52 @@
+.container {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.header h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.count {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.packageList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.packageItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.packageItem input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.packageName {
+  font-size: 0.875rem;
+  color: #333;
+  font-family: 'JetBrains Mono', 'Fira Mono', 'Menlo', monospace;
+} 
