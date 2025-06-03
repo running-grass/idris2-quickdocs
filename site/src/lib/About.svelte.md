@@ -19,16 +19,18 @@ Contributions
 
 Website layout and some CSS style from [The original search engine](https://git.sr.ht/~cypheon/idris2-quickdocs)
 
+Forked from https://git.envs.net/iacore/idris2-quickdocs/
+
 HTML docs generation and typesetting by [Katla](https://github.com/idris-community/katla)
 
-HTML docs generated and aggregated by [idris2-pack-docs](https://github.com/stefan-hoeck/idris2-pack-docs) ⬅️ download the Documentation here (without search engine)
+HTML docs generated and aggregated by [idris2-pack-docs](https://github.com/stefan-hoeck/idris2-pack-db/tree/docs) ⬅️ download the Documentation here (without search engine)
 
-HTML docs indexed by [idris2-docs-indexer](https://github.com/locriacyber/idris2-docs-indexer-html)
+HTML docs indexed by [idris2-docs-indexer](https://github.com/running-grass/idris2-docs-indexer-html)
 
 Links
 -----
 
-[Source code of this page](https://github.com/locriacyber/idris2-quickdocs) ⬅️ report bug here
+[Source code of this page](https://github.com/running-grass/idris2-quickdocs) ⬅️ report bug here
 
 [Idris - Home Page](https://www.idris-lang.org/)
 

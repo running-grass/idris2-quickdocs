@@ -5,6 +5,7 @@
 
 ## TODO
 indexer:
+- [ ] use `idris` refactor to build the index
 
 site:
 - [ ] use service worker to skip cache validation
